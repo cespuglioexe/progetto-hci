@@ -3,23 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PoliShare</title>
+    <title>StudiaMi</title>
     <script type="module" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary bg-opacity-75 py-1 blurbg" id="navbar">
-      <div class="container-fluid fixed">
+    <nav class="navbar" id="navbar">
+      <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <a class="navbar-brand v-center d-flex" href="#">
-              <img src="assets/network.png" height="24px">
-            </a>
+        <div class="navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <!-- <a class="navbar-brand v-center d-flex" href="#">
+              <img src="assets/study.png" height="24px">
+            </a> -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              <a class="nav-link" aria-current="page" href="#Home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#Consegne">Consegne</a>
@@ -33,12 +33,14 @@
     </nav>
     <main>
       <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <div class="container-fluid vh-100 first-row bg-light">
+
+        <!-- HERO SECTION -->
+        <div class="container-fluid hero-section">
           <div class="container vh-100">
             <div id="Home" class="row vh-100">
               <div class="col v-center d-flex">
-                <div class=" text-center fs-2">PoliShare</div>
-                <div class=" text-center fs-2">Vivi al pieno la vita da studente.</div>
+                <h1 class="hero-title text-center">StudiaMi</h1>
+                <div class="hero-subtitle text-center">Studiare insieme, organizzarsi meglio, imparare di più.</div>
               </div>
             </div>
           </div>
@@ -51,7 +53,7 @@
             <div class="fs-1 text-center p-0 fw-bold p-5">Consegne</div>
             <div class="container-sm auto-fit mx-auto">
 
-              <!-- CONSEGNA 0.1 : DEFINIZIONE PROGETTO -->
+              <!-- CONSEGNA 0 : DEFINIZIONE PROGETTO -->
               <div class="container-sm auto-fit">
                 <div class="row">
 
@@ -82,7 +84,7 @@
                     <svg viewBox="0 0 30 120" width="30" height="120" xmlns="http://www.w3.org/2000/svg">
                       <circle stroke="#333" cx="15" cy="15" r="12" stroke-width="3" fill="none"/>
                       <text x="15" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">C1</text>
-                      <!-- <rect width="3" height="90" x="13" y="30" rx="2" ry="2" fill="#333" /> -->
+                      <rect width="3" height="90" x="13" y="30" rx="2" ry="2" fill="#333" />
                     </svg>
                   </div>
 
@@ -94,6 +96,50 @@
                 </div>
               </div>
 
+              <!-- CONSEGNA 2 : REFINEMENT E FOCUS -->
+              <div class="container-sm auto-fit">
+                <div class="row">
+
+                  <div class="col d-flex flex-column p-0 roadmap-entry text-end">
+                    <a href="https://github.com/cespuglioexe/progetto-hci/blob/main/C2/Raffinamento%20e%20Focus.pdf" class="fs-3 text-dark">Refinement and focus</a>
+                    <div class="fs-10">Messa a fuoco del progetto e formulazione del problema da risolvere.</div>
+                  </div>
+
+                  <div class="col d-flex justify-content-center roadmap-graphic">
+                    <svg viewBox="0 0 30 120" width="30" height="120" xmlns="http://www.w3.org/2000/svg">
+                      <circle stroke="#333" cx="15" cy="15" r="12" stroke-width="3" fill="none"/>
+                      <text x="15" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">C2</text>
+                      <!-- <rect width="3" height="90" x="13" y="30" rx="2" ry="2" fill="#333" /> -->
+                    </svg>
+                  </div>
+
+                  <div class="col d-flex flex-column justify-content-start roadmap-entry"></div>
+
+                </div>
+              </div>
+
+              <!-- CONSEGNA 4 : ??? -->
+              <!-- <div class="container-sm auto-fit">
+                <div class="row">
+
+                  <div class="col d-flex flex-column justify-content-start roadmap-entry"></div>
+
+                  <div class="col d-flex justify-content-center roadmap-graphic">
+                    <svg viewBox="0 0 30 120" width="30" height="120" xmlns="http://www.w3.org/2000/svg">
+                      <circle stroke="#333" cx="15" cy="15" r="12" stroke-width="3" fill="none"/>
+                      <text x="15" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">C1</text>
+                      <rect width="3" height="90" x="13" y="30" rx="2" ry="2" fill="#333" />
+                    </svg>
+                  </div>
+
+                  <div class="col d-flex flex-column p-0 roadmap-entry">
+                    <a href="https://github.com/cespuglioexe/progetto-hci/blob/main/C1/Needfinding.pdf" class="fs-3 text-dark">Needfinding</a>
+                    <div class="fs-10">Rilevazione di obiettivi e bisogni degli utenti.</div>
+                  </div>
+
+                </div>
+              </div> -->
+
               <div class="container-sm p-5"></div>
 
           </div>
@@ -103,8 +149,9 @@
         <div class="container-fluid">
           <div class="container-xl bg-dark">
             <div class="row">
-              <div class="nav-padding"></div>
-              <div id="Team" class="fs-1 text-center p-0 fw-bold p-5 text-light">Team</div>
+              <div class="col">
+                <div id="Team" class="fs-1 text-center p-0 fw-bold p-5 text-light">Team</div>
+              </div>
             </div>
 
             <!-- Nomi componenti --->
@@ -113,40 +160,49 @@
                 <div class="container name-table">
                   <div class="title-padding"></div>
                   <div class="row">
+
                     <div class="col p-2">
                       <div class="fs-2 text-light">
                         <div>Amaucci Giacomo</div>
                       </div>
                     </div>
+
                     <div class="col-5 p-2">
                       <div class="fs-2 text-light ">
                         <div>Avino Giovanni</div>
                       </div>
                     </div>
+
                   </div>
                   <div class="row">
+
                     <div class="col p-2">
                       <div class="fs-2 text-light">
                         <div>Sergio Bolsieri</div>
                       </div>
                     </div>
+
                     <div class="col-5 p-2">
                       <div class="fs-2 text-light">
                         <div>Leucci Francesco</div>
                       </div>
                     </div>
+
                   </div>
                   <div class="row">
+
                     <div class="col p-2">
                       <div class="fs-2 text-light">
                         <div>Pallavicini Nicolò</div>
                       </div>
                     </div>
+
                     <div class="col-5 p-2">
                       <div class="fs-2 text-light">
                         <div>Tonarelli Marco</div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
