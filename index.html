@@ -1,11 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>StudiaMi</title>
     <script type="module" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+      .proto-iframe { width:100%; height:100%; min-height:420px; border: 1px solid rgba(0,0,0,0.08); border-radius:4px; }
+      @media (min-width: 992px) {
+        .proto-iframe { min-height:700px; }
+      }
+      .prototipi-card { margin-bottom:1.5rem; }
+    </style>
   </head>
   <body>
     <nav class="navbar" id="navbar">
@@ -23,6 +33,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#Consegne">Consegne</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Prototipi">Prototipi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#Team">Team</a>
@@ -101,7 +114,7 @@
                 <div class="row">
 
                   <div class="col d-flex flex-column p-0 roadmap-entry text-end">
-                    <a href="https://github.com/cespuglioexe/progetto-hci/blob/main/C2/Raffinamento%20e%20Focus.pdf" class="fs-3 text-dark">Refinement and focus</a>
+                    <a href="https://github.com/cespuglioexe/progetto-hci/blob/main/C2/Raffinamento%20e%20Focus.pdf" class="fs-3 text-dark">Refinement e focus</a>
                     <div class="fs-10">Messa a fuoco del progetto e formulazione del problema da risolvere.</div>
                   </div>
 
@@ -109,7 +122,7 @@
                     <svg viewBox="0 0 30 120" width="30" height="120" xmlns="http://www.w3.org/2000/svg">
                       <circle stroke="#333" cx="15" cy="15" r="12" stroke-width="3" fill="none"/>
                       <text x="15" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">C2</text>
-                      <!-- <rect width="3" height="90" x="13" y="30" rx="2" ry="2" fill="#333" /> -->
+                      <rect width="3" height="90" x="13" y="30" rx="2" ry="2" fill="#333" />
                     </svg>
                   </div>
 
@@ -118,8 +131,8 @@
                 </div>
               </div>
 
-              <!-- CONSEGNA 4 : ??? -->
-              <!-- <div class="container-sm auto-fit">
+              <!-- CONSEGNA 3 : TASK, STORYBOARD E PRIMI PROTOTIPI -->
+              <div class="container-sm auto-fit">
                 <div class="row">
 
                   <div class="col d-flex flex-column justify-content-start roadmap-entry"></div>
@@ -127,92 +140,129 @@
                   <div class="col d-flex justify-content-center roadmap-graphic">
                     <svg viewBox="0 0 30 120" width="30" height="120" xmlns="http://www.w3.org/2000/svg">
                       <circle stroke="#333" cx="15" cy="15" r="12" stroke-width="3" fill="none"/>
-                      <text x="15" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">C1</text>
-                      <rect width="3" height="90" x="13" y="30" rx="2" ry="2" fill="#333" />
+                      <text x="15" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">C3</text>
+                      <!-- <rect width="3" height="90" x="13" y="30" rx="2" ry="2" fill="#333" /> -->
                     </svg>
                   </div>
 
                   <div class="col d-flex flex-column p-0 roadmap-entry">
-                    <a href="https://github.com/cespuglioexe/progetto-hci/blob/main/C1/Needfinding.pdf" class="fs-3 text-dark">Needfinding</a>
-                    <div class="fs-10">Rilevazione di obiettivi e bisogni degli utenti.</div>
+                    <a href="https://github.com/cespuglioexe/progetto-hci/blob/main/C3/Task,%20Storyboard%20e%20Primi%20Prototipi.pdf" class="fs-3 text-dark">Primi Prototipi</a>
+                    <div class="fs-10">Definizione dei task, effettuando anche task-analysis, costruzione della storyboard e sviluppo dei primi prototipi wireframe</div>
                   </div>
 
                 </div>
-              </div> -->
+              </div>
 
               <div class="container-sm p-5"></div>
 
           </div>
         </div>
       </div>   
-      <div class="container-fluid first-row bg-dark bg-special">
-        <div class="container-fluid">
-          <div class="container-xl bg-dark">
-            <div class="row">
-              <div class="col">
-                <div id="Team" class="fs-1 text-center p-0 fw-bold p-5 text-light">Team</div>
+
+      <!-- PROTOTIPI SECTION -->
+      <div class="container-fluid prototipi-row bg-light">
+        <div class="container">
+          <div id="Prototipi" class="fs-1 text-center p-0 fw-bold p-5">Prototipi</div>
+          <div class="container-sm auto-fit mx-auto p-3">
+            <div class="fs-5 text-center mb-3">Qui trovate i prototipi interattivi del progetto. Cliccate per aprire in una nuova scheda o interagire direttamente se il vostro browser lo supporta.</div>
+
+              <div class="col-12">
+                <div class="card p-2 prototipi-card">
+                  <div class="card-body">
+                    <div class="figma-embed-wrapper">
+                      <iframe
+                        class="figma-embed aspect-16-9 figma-embed--site"
+                        title="Prototipo Web-app — StudiaMi"
+                        aria-label="Prototipo interattivo della web-app StudiaMi"
+                        loading="lazy"
+                        src="https://embed.figma.com/proto/guzu0BoPqb3cZPOadyGnky/Prototipo-Sito?page-id=0%3A1&node-id=3-3&p=f&viewport=76%2C120%2C0.21&scaling=contain&content-scaling=fixed&starting-point-node-id=3%3A3&embed-host=share"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                </div>
               </div>
-            </div>
 
-            <!-- Nomi componenti --->
-            <div class="row h-75 gx-5">
-              <div class="col v-center d-flex">
-                <div class="container name-table">
-                  <div class="title-padding"></div>
-                  <div class="row">
-
-                    <div class="col p-2">
-                      <div class="fs-2 text-light">
-                        <div>Amaducci Giacomo</div>
-                      </div>
+              <div class="col-12">
+                <div class="card p-2 prototipi-card">
+                  <div class="card-body">
+                    <div class="figma-embed-wrapper">
+                      <iframe
+                        class="figma-embed aspect-9-16 figma-embed--app"
+                        title="Prototipo Applicazione mobile — StudiaMi"
+                        aria-label="Prototipo interattivo dell'app mobile StudiaMi"
+                        loading="lazy"
+                        src="https://embed.figma.com/proto/docOcLl7fUZHS2x1KVXkcN/Prototipo-App?page-id=0%3A1&node-id=4-5&viewport=-30%2C264%2C0.51&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A5&embed-host=share"
+                        allowfullscreen>
+                      </iframe>
                     </div>
+                </div>
+              </div>
 
-                    <div class="col-5 p-2">
-                      <div class="fs-2 text-light ">
-                        <div>Avino Giovanni</div>
-                      </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="container-fluid first-row bg-dark bg-special section-bleed">
+        <div class="container">
+          <div id="Team" class="fs-1 text-center p-0 fw-bold p-5 text-light">Team</div>
+
+          <!-- Nomi componenti --->
+          <div class="row h-75 gx-5">
+            <div class="col v-center d-flex">
+              <div class="container name-table">
+                <div class="title-padding"></div>
+                <div class="row">
+
+                  <div class="col p-2">
+                    <div class="fs-2 text-light">
+                      <div>Amaducci Giacomo</div>
                     </div>
-
                   </div>
-                  <div class="row">
 
-                    <div class="col p-2">
-                      <div class="fs-2 text-light">
-                        <div>Sergio Bolsieri</div>
-                      </div>
+                  <div class="col-5 p-2">
+                    <div class="fs-2 text-light ">
+                      <div>Avino Giovanni</div>
                     </div>
-
-                    <div class="col-5 p-2">
-                      <div class="fs-2 text-light">
-                        <div>Leucci Francesco</div>
-                      </div>
-                    </div>
-
                   </div>
-                  <div class="row">
 
-                    <div class="col p-2">
-                      <div class="fs-2 text-light">
-                        <div>Pallavicini Nicolò</div>
-                      </div>
+                </div>
+                <div class="row">
+
+                  <div class="col p-2">
+                    <div class="fs-2 text-light">
+                      <div>Sergio Bolsieri</div>
                     </div>
-
-                    <div class="col-5 p-2">
-                      <div class="fs-2 text-light">
-                        <div>Tonarelli Marco</div>
-                      </div>
-                    </div>
-
                   </div>
+
+                  <div class="col-5 p-2">
+                    <div class="fs-2 text-light">
+                      <div>Leucci Francesco</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row">
+
+                  <div class="col p-2">
+                    <div class="fs-2 text-light">
+                      <div>Pallavicini Nicolò</div>
+                    </div>
+                  </div>
+
+                  <div class="col-5 p-2">
+                    <div class="fs-2 text-light">
+                      <div>Tonarelli Marco</div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
+
           <div class="end-padding"></div>
-          </div>
         </div>
       </div>
-    </div>   
     </main>
   </body>
 </html>
