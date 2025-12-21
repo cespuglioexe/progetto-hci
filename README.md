@@ -1,4 +1,4 @@
-<h4 align="center">Progetto di Human-Computer Interaction, a.a. 2024 - 2025</h4>
+<h4 align="center">Progetto di Human-Computer Interaction, a.a. 2025 - 2026</h4>
 <p align="center">
     Amaducci Giacomo •
     Avino Giovanni •
